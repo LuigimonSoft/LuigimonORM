@@ -5,7 +5,7 @@ namespace LuigimonORM
   /// <summary>
   /// Attibute to define column  
   /// </summary>
-  [AttributeUsage(AttributeTargets.Class)]
+  [AttributeUsage(AttributeTargets.Property)]
   public class ColumnAttribute : Attribute
   {
     private int _maximumlength=-1;
