@@ -14,11 +14,12 @@ namespace LuigimonORM
     private List<string> ColumnNames { get; set; }
     private string KeyColumn { get; set; }
 
-    public Entity()
+    public Entity(DataBaseType dialect, string connectionString): base(dialect, connectionString)
     {
       TableName = getTableName(this);
       KeyColumn = getKeyColumnName(this);
       ColumnNames = getColumnsNames();
+      
     }
 
     #region Get Attributes
